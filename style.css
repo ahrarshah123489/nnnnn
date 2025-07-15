@@ -1,48 +1,93 @@
-/* Reset default styles */
+/* Reset default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #f9f9f9;
+  color: #000;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-header h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+nav .logo {
+  font-size: 24px;
 }
 
-header p {
-    font-size: 22px;
-    margin-bottom: 40px;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.buttons a {
-    text-decoration: none;
-    background: #fff;
-    color: #2575fc;
-    padding: 15px 30px;
-    margin: 10px;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s ease;
-    display: inline-block;
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 
-.buttons a:hover {
-    background: #000;
-    color: #fff;
+nav ul li a:hover {
+  color: #0071e3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  text-align: center;
+  background: url('https://www.apple.com/v/back-to-school/images/overview/hero/hero_background__f1t0u7u2iy6u_large.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.hero-text {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #0071e3;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005bb5;
 }
